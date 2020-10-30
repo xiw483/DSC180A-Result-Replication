@@ -1,6 +1,5 @@
 #!/usr/bin/env Rscript
 
-setwd("..")
 library("rjson")
 
 source("src/data/etl.R")
@@ -17,12 +16,12 @@ main <- function(target) {
   
   if(grepl('analysis',target, fixed=TRUE)) {
     analysis_cfg<- fromJSON(file='config/analysis-params.json')
-    generate_plots_mootha(analysis_cfg$data, analysis_cfg$outdir)
+    generate_plots_mootha(data, analysis_cfg$outdir)
   }
   
-  if(grepl('data',target, fixed=TRUE)) {
-    data_cfg<- fromJSON(file='config/data-params.json')
-    get_data(data_cfg$data, data_cfg$datadir, data_cfg$outpath)
+  if(grepl('model',target, fixed=TRUE)) {
+    data_cfg<- fromJSON(file='config/model-params.json')
+    
   }
     
   return()
