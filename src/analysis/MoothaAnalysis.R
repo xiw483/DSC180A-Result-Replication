@@ -104,7 +104,7 @@ plot_fdr_tstat <- function(data,outdir) {
   dev.off()
 }
 
-generate_plots <- function(data, outdir) {
+generate_plots_mootha <- function(data, outdir) {
   #generate plots and save in output directory
   hist_p(data, outdir)
   hist_tstat(data, outdir)
