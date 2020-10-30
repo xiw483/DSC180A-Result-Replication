@@ -1,6 +1,6 @@
 #etl.R contains functions used to extract data from different datasets
 
-get_data <- function(data, outdir) {
+load_data <- function(data, datadir) {
   # access the selected dataset
-  save(data, file=outdir)
+  data <- read.delim(datadir)
 }
