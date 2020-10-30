@@ -1,4 +1,9 @@
 {
   "data":"MoothaData.txt"
-  "outpath":"data/raw"
+  "outdir":"data/raw/MoothaData.txt"
+}
+
+{
+  "data":"JoohoData.txt"
+  "outdir":"data/raw/JoohoData.txt"
 }
