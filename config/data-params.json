@@ -1,9 +1,9 @@
 {
-  "data":"MoothaData.txt"
-  "outdir":"data/raw/MoothaData.txt"
+  "data":"mootha"
+  "datadir":"data/MoothaData.txt"
 }
 
 {
-  "data":"JoohoData.txt"
-  "outdir":"data/raw/JoohoData.txt"
+  "data":"fmri"
+  "datadir":"data/fMRI.txt"
 }
