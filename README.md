@@ -7,3 +7,7 @@
 - reference: contains external references.
 - notebook: contains reports.
 - run-data.R: data ingestion pipeline.
+
+
+### Responsibilities
+Raymond Wang developed the ingestion pipeline "run-data.r" and adapted the analysis codes "MoothaAnalysis" from the demonstration during discussion sections.
