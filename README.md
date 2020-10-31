@@ -4,3 +4,4 @@
 - data: contains raw data and data output.
 - src: contains source code for data loading and data analysis.
 - config: contains configuration for parameter setups.
+- run-data.R: data ingestion pipeline.
