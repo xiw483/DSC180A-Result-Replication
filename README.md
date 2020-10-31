@@ -10,4 +10,5 @@
 
 
 ### Responsibilities
-Raymond Wang developed the ingestion pipeline "run-data.r" and adapted the analysis codes "MoothaAnalysis" from the demonstration during discussion sections.
+- Raymond Wang developed the ingestion pipeline "run-data.r" and adapted the analysis codes "MoothaAnalysis" from the demonstration during discussion sections.
+- Jacob Benson developed part of the ingestion pipeline.
