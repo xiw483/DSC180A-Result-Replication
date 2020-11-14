@@ -1,4 +1,6 @@
 {
-  "data":"mootha",
-  "datadir":"data/raw/MoothaData.txt"
+  "data1":"mootha",
+  "data2":"fmri",
+  "datadir1":"data/raw/MoothaData.txt",
+  "datadir2":"data/raw/fMRI.txt"
 }
