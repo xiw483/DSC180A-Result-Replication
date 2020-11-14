@@ -93,7 +93,7 @@ plot_fdr_zscore <- function(data,outdir) {
   dev.off()
 }
 
-generate_plots_mootha <- function(data, outdir) {
+generate_plots_fmri <- function(data, outdir) {
   #generate plots and save in output directory
   hist_scores(data, outdir)
   exp_obs_p(data,outdir)
