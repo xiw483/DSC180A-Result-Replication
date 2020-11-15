@@ -1,7 +1,7 @@
 {
     "config": ["config/analysis-params.json", "config/data-params.json"],  # paths of at least 2 config files
     "build": "run-data.R, # path of your build script
-    "library": "src", # directory containing (your) library code
-    "notebook": "<notebook_filepath>.ipynb" # path to at least one notebook meant for reading by someone other than you.
-    "targets": ["target1", "target2"] # at least two targets
+    "library": ["src"], # directory containing (your) library code
+    "notebook": "notebook.ipynb" # path to at least one notebook meant for reading by someone other than you.
+    "targets": ["run-data.R data", "run-data.R dataanalysis"] # at least two targets
 }
