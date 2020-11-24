@@ -29,7 +29,11 @@ main <- function(target) {
   }
   
   if (grepl('test-data', target, fixed=TRUE)) {
-    data_cfg <- fromJSON(file='config/test-params.json')
+    test_cfg <- fromJSON(file='config/test-params.json')
+    mootha = get_data(test_cfg$data1, test_cfg$datadir1)
+    fmri = get_data(test_cfg$data2, test_cfg$datadir2)
+    generate_plots_mootha(mootha, test_cfg$outdir)
+    generate_plots_fmri(fmri, test_cfg$outdir)
   }
     
   return()
