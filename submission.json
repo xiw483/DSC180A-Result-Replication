@@ -3,5 +3,5 @@
     "build": "run-data.R", 
     "library": ["src"], 
     "notebook": "notebook.ipynb",
-    "targets": ["run-data.R data", "run-data.R dataanalysis"] 
+    "targets": ["run-data.R data", "run-data.R dataanalysis", "run-data.R test-data"]
 }
