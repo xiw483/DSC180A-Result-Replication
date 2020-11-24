@@ -27,6 +27,10 @@ main <- function(target) {
     data_cfg<- fromJSON(file='config/model-params.json')
     
   }
+  
+  if (grepl('test-data', target, fixed=TRUE)) {
+    data_cfg <- fromJSON(file='config/test-params.json')
+  }
     
   return()
 }
