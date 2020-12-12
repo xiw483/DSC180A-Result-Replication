@@ -3,5 +3,7 @@
     "build": "run-data.R", 
     "library": ["src"], 
     "notebook": "notebook.ipynb",
-    "targets": ["run-data.R data", "run-data.R dataanalysis", "run-data.R test-data"]
+    "targets": ["run-data.R data", "run-data.R dataanalysis", "run-data.R test-data"],
+    "dockerhub-id": xiw483/test:latest",
+    "repository-id": "https://github.com/xiw483/DSC180A-Result-Replication.git"
 }
