@@ -2,5 +2,7 @@
   "data1":"mootha",
   "data2":"fmri",
   "datadir1":"data/raw/MoothaData.txt",
-  "datadir2":"data/raw/fMRI.txt"
+  "datadir2":"data/raw/fMRI.txt",
+  "threshold1": 0.1,
+  "threshold2": 0.05
 }
