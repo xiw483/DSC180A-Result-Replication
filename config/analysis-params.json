@@ -1,5 +1,7 @@
 {
 "data1":"mootha", 
 "data2":"fmri",
-"outdir":"data/out"
+"outdir":"data/out",
+"threshold1": 0.1,
+"threshold2": 0.05  
 }
