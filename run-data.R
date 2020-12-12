@@ -18,9 +18,9 @@ main <- function(target) {
   
   if(grepl('analysis',target, fixed=TRUE)) {
     analysis_cfg<- fromJSON(file='config/analysis-params.json')
+    threshold = get_data(analysis_cfg$threshold1)
     generate_plots_mootha(mootha, analysis_cfg$outdir)
     generate_plots_fmri(fmri, analysis_cfg$outdir)
-    
   }
   
   if(grepl('model',target, fixed=TRUE)) {
@@ -32,8 +32,8 @@ main <- function(target) {
     test_cfg <- fromJSON(file='config/test-params.json')
     mootha = get_data(test_cfg$data1, test_cfg$datadir1)
     fmri = get_data(test_cfg$data2, test_cfg$datadir2)
-    generate_plots_mootha(mootha, test_cfg$outdir)
-    generate_plots_fmri(fmri, test_cfg$outdir)
+    generate_plots_mootha(mootha, threshold, test_cfg$outdir)
+    generate_plots_fmri(fmri, threshold, test_cfg$outdir)
   }
     
   return()

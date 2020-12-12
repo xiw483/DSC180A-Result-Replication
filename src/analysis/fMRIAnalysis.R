@@ -76,7 +76,7 @@ plot_fdr_p <- function(data,outdir) {
   dev.off()
 }
 
-plot_fdr_zscore <- function(data,outdir) {
+plot_fdr_zscore <- function(data,threshold,outdir) {
   #Plot the fdr rate of z scores
   m=nrow(data)
   x = seq(-12,12,by=0.25)
@@ -89,16 +89,17 @@ plot_fdr_zscore <- function(data,outdir) {
   jpeg(paste(outdir, 'fmri_fdr_zscore.jpg',sep='/'))
   
   plot(x, z.expected/z.obtained, col='black', type='l', lwd=2, ylab='FDR')
+  abline(h=threshold, col="red")
   
   dev.off()
 }
 
-generate_plots_fmri <- function(data, outdir) {
+generate_plots_fmri <- function(data, threshold,outdir) {
   #generate plots and save in output directory
   hist_scores(data, outdir)
   exp_obs_p(data,outdir)
   exp_obs_zscore(data, outdir)
   plot_fdr_p(data,outdir)
-  plot_fdr_zscore(data, outdir)
+  plot_fdr_zscore(data, threshold,outdir)
 }
 

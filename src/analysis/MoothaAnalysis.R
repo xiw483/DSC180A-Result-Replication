@@ -92,7 +92,7 @@ plot_fdr_p <- function(data,outdir) {
   dev.off()
 }
 
-plot_fdr_tstat <- function(data,outdir) {
+plot_fdr_tstat <- function(data,threshold,outdir) {
   #Plot the fdr rate of t statistics
   m=nrow(data)
   x = seq(-5,5,by=0.1)
@@ -106,17 +106,18 @@ plot_fdr_tstat <- function(data,outdir) {
   jpeg(paste(outdir, 'fdr_tstat.jpg',sep='/'))
   
   plot(x, t.expected/t.obtained, col='black', type='l', lwd=2, ylab='FDR')
+  abline(h=threshold, col="red")
   
   dev.off()
 }
 
-generate_plots_mootha <- function(data, outdir) {
+generate_plots_mootha <- function(data, threshold,outdir) {
   #generate plots and save in output directory
   hist_p(data, outdir)
   hist_tstat(data, outdir)
   exp_obs_p(data,outdir)
   exp_obs_tstat(data, outdir)
   plot_fdr_p(data,outdir)
-  plot_fdr_tstat(data, outdir)
+  plot_fdr_tstat(data, threshold,outdir)
 }
 
